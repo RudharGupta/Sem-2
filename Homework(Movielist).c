@@ -12,7 +12,6 @@ void createlist() {
         size = 0;
     } else {
         printf("Enter Movies \n");
-        // Skip newline character left in input buffer
         getchar();
         for (int i = 0; i < size; i++) {
             scanf("%c", &list[i]);
@@ -27,7 +26,6 @@ void insertmovie() {
     char element;
     int position;
     printf("Enter Movie to insert: ");
-    // Skip newline character left in input buffer
     getchar();
     scanf("%c", &element);
     printf("Enter the position to insert Movie: ");
@@ -48,7 +46,6 @@ void deletemovie() {
     }
     int position;
     printf("Enter Movie to delete: ");
-    // Skip newline character left in input buffer
     scanf("%d", &position);
     if (position < 0 || position >= size) {
         printf("Invalid position\n");
@@ -68,7 +65,6 @@ void searchmovie() {
     char element;
     int found = 0;
     printf("Enter Element to search: ");
-    // Skip newline character left in input buffer
     getchar();
     scanf("%c", &element);
     for (int i = 0; i < size; i++) {
